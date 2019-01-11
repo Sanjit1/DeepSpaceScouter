@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Sanjit_Default" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="colorAccent">#0000ff</item>
+        <item name="android:navigationBarColor">#ff6d00</item>
+        <item name="android:colorPrimary">#eeff41</item>
+        <item name="android:colorPrimaryDark">#b8cc00</item>
+        <item name="android:colorAccent">#1565C0</item>
+        <item name="android:statusBarColor">#ff6d00</item>
+    </style>
+</resources>
