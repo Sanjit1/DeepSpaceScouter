@@ -42,4 +42,6 @@ dependencies {
     implementation files('libs/commons-io-2.6.jar')
     implementation files('libs/commons-collections4-4.2-javadoc.jar')
     implementation files('libs/commons-collections4-4.2.jar')
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
 }

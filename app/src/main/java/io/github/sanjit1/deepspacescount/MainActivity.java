@@ -2,6 +2,7 @@ package io.github.sanjit1.deepspacescount;
 
 import android.Manifest;
 import android.app.Activity;
+import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,12 +25,18 @@ public class MainActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(MainActivity.this, new String[] {Manifest.permission.ACCESS_NETWORK_STATE}, STORAGE_PERMISSION_CODE);
     }
     public void onClick(View view) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Intent myIntent = new Intent(MainActivity.this,
+                    TeamName.class);
+            startActivity(myIntent);
+        } else {
+            // Swap without transition
 
-        Intent myIntent = new Intent(MainActivity.this,
-                TeamName.class);
-        startActivity(myIntent);
+            Intent myIntent = new Intent(MainActivity.this,
+                    TeamName.class);
+            startActivity(myIntent);
+
+        }
 
     }
-
-
 }

@@ -1,1200 +1,579 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    tools:context=".TeamName"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        tools:context=".TeamName">
-
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Scout"
-            android:textSize="30sp" />
-
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/team"
-            android:ems="10"
-            android:hint="Team Number"
-            android:singleLine="true"
-            android:inputType="number"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Autonomous"
-            android:textSize="48sp"
-            app:autoSizeTextType="none" />
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/AutoCrosstxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cross"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <CheckBox
-                android:id="@+id/AutoCross"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Level 1"
-            android:textSize="36sp" />
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/AutoTask1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task1"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A1p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A1p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto1Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A1m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A1m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/AutoTask2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task2"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A2p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A2p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto2Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A2m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A2m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/AutoTask3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task3"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A3p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A3p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto3Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A3m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A3m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/AutoTask4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task4"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A4p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A4p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto4Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A4m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A4m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Level 2 and 3"
-            android:textSize="36sp" />
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Auto1Task1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task1"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A5p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A5p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto5Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A5m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A5m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Auto1Task2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task2"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A6p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A6p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto6Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A6m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A6m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Auto1Task3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task3"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A7p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A7p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto7Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A7m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A7m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Auto1Task4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task4"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A8p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A8p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto8Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A8m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A8m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Loading Station"
-            android:textSize="36sp" />
-
+        android:fillViewport="true">
 
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
             tools:context=".TeamName">
 
-            <TextView
-                android:id="@+id/Auto2Task1"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:text="DeepSpaceScout"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="@string/app_name"
+                app:titleTextColor="#FFFFFF" />
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:text="Task1"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Scout"
+                    android:textSize="30sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardCornerRadius="10dp">
+
+                <EditText
+                    android:id="@+id/team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="Team Number"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Start Game"
+                    android:textSize="36sp"
+                    app:autoSizeTextType="none" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardCornerRadius="10dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/aut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="ctrl"
+                        android:text="Autonomous"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/bl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="ctrl"
+                        android:text="Blind"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/cam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="ctrl"
+                        android:text="Camera"
+                        android:textSize="24sp" />
+
+
+                </RadioGroup>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardCornerRadius="10dp">
+
+                <EditText
+                    android:id="@+id/hat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="Hatch grabber Mechanism"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardCornerRadius="10dp">
+
+                <EditText
+                    android:id="@+id/car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="Cargo grabber Mechanism"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardCornerRadius="10dp">
+
+                <EditText
+                    android:id="@+id/lift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="Lifting Method"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Drive"
+                    android:textSize="36sp"
+                    app:autoSizeTextType="none" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    tools:context=".TeamName">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="false"
+                        card_view:cardCornerRadius="5dp">
+
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:context=".TeamName">
+
+                            <TextView
+                                android:id="@+id/T1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Hatch Pre-Game"
+                                android:textSize="20sp"
+                                app:autoSizeTextType="none" />
+
+                            <Button
+                                android:id="@+id/Tp1"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:onClick="t1p"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/Tv1"
+                                android:layout_width="35dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/Tm1"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:onClick="t1m"
+                                android:text="-" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="false"
+                        card_view:cardCornerRadius="5dp">
+
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:context=".TeamName">
+
+                            <TextView
+                                android:id="@+id/T2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Cargo Pre-Game"
+                                android:textSize="20sp"
+                                app:autoSizeTextType="none" />
+
+                            <Button
+                                android:id="@+id/Tp2"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:onClick="t2p"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/Tv2"
+                                android:layout_width="35dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/Tm2"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:onClick="t2m"
+                                android:text="-" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="false"
+                        card_view:cardCornerRadius="5dp">
+
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:context=".TeamName">
+
+                            <TextView
+                                android:id="@+id/T3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Hatch in Game   "
+                                android:textSize="20sp"
+                                app:autoSizeTextType="none" />
+
+                            <Button
+                                android:id="@+id/Tp3"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:onClick="t3p"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/Tv3"
+                                android:layout_width="35dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/Tm3"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:onClick="t3m"
+                                android:text="-" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardElevation="10dp"
+                        app:cardPreventCornerOverlap="false"
+                        card_view:cardCornerRadius="5dp">
+
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:context=".TeamName">
+
+                            <TextView
+                                android:id="@+id/T4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Cargo in Game   "
+                                android:textSize="20sp"
+                                app:autoSizeTextType="none" />
+
+                            <Button
+                                android:id="@+id/Tp4"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:onClick="t4p"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/Tv4"
+                                android:layout_width="35dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/Tm4"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:onClick="t4m"
+                                android:text="-" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/L1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="Climb"
+                        android:text="Level 1"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/L2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="ctrl"
+                        android:text="Level 2"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/L3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="ctrl"
+                        android:text="Level 3"
+                        android:textSize="24sp" />
+
+
+                </RadioGroup>
+            </android.support.v7.widget.CardView>
 
             <Button
-                android:id="@+id/A9p"
-                android:layout_width="4dp"
+                android:id="@+id/export"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A9p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto9Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
+                android:onClick="export"
+                android:text="Export"
+                android:textAllCaps="false"
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/A9m"
-                android:layout_width="4dp"
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A9m"
-                android:text="-" />
-
-
+                android:onClick="shareFile"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
         </LinearLayout>
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Auto2Task2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task2"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A10p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A10p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto10Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A10m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A10m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Auto2Task3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task3"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A11p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A11p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto11Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A11m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A11m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Auto2Task4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task4"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/A12p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A12p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Auto12Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/A12m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="A12m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Drive"
-            android:textSize="48sp"
-            app:autoSizeTextType="none" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Level"
-            android:textSize="36sp" />
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/DriveTask1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task1"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D1p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D1p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive1Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D1m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D1m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/DriveTask2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task2"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D2p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D2p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive2Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D2m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D2m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/DriveTask3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task3"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D3p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D3p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive3Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D3m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D3m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/DriveTask4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task4"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D4p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D4p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive4Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D4m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D4m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Level 2 and 3"
-            android:textSize="36sp" />
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Drive1Task1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task1"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D5p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D5p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive5Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D5m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D5m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Drive1Task2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task2"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D6p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D6p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive6Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D6m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D6m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Drive1Task3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task3"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D7p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D7p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive7Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D7m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D7m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Drive1Task4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task4"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D8p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D8p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive8Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D8m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D8m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Loading Station"
-            android:textSize="36sp" />
-
-
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Drive2Task1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task1"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D9p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D9p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive9Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D9m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D9m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Drive2Task2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task2"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D10p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D10p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive10Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D10m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D10m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-            <TextView
-                android:id="@+id/Drive2Task3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task3"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D11p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D11p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive11Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D11m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D11m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".TeamName">
-
-
-
-            <TextView
-                android:id="@+id/Drive2Task4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task4"
-                android:textSize="24sp"
-                app:autoSizeTextType="none" />
-
-            <Button
-                android:id="@+id/D12p"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D12p"
-                android:text="+" />
-
-            <TextView
-                android:id="@+id/Drive12Val"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/D12m"
-                android:layout_width="4dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="D12m"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <RadioGroup android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/L1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="Climb"
-                android:text="Level 1"
-                android:textSize="24sp" />
-            <RadioButton android:id="@+id/L2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Level 2"
-                android:onClick="Climb"
-                android:textSize="24sp" />
-            <RadioButton android:id="@+id/L3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Level 3"
-                android:onClick="Climb"
-                android:textSize="24sp" />
-            <RadioButton android:id="@+id/NT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Did not Climb"
-                android:onClick="Climb"
-                android:textSize="24sp"/>
-
-
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/export"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="export"
-            android:text="Export"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/share"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="shareFile"
-            android:text="Share"
-            android:textAllCaps="false"
-            android:textSize="24sp" />
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</LinearLayout>
