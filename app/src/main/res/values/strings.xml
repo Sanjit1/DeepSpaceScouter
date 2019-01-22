@@ -1,3 +1,34 @@
 <resources>
-    <string name="app_name">DeepSpaceScount</string>
+    <string name="app_name">DeepSpaceScout</string>
+    <string name="no_answer">Did not answer</string>
+    <string name="level_1">Level 1</string>
+    <string name="level_2">Level 2</string>
+    <string name="level_3">Level 3</string>
+    <string name="auto">Autonomous</string>
+    <string name="blind">Blind</string>
+    <string name="camera">Camera</string>
+    <string name="no_team_name">Enter a team name!</string>
+    <string name="no_hatch_mechanism">Enter a hatch mechanism!</string>
+    <string name="no_cargo_mechanism">Enter a cargo mechanism!</string>
+    <string name="no_lift_mechanism">Enter a lift mechanism</string>
+    <string name="url">https://sanjit1.github.io/Android/data.xls</string>
+    <string name="download_notification">The excel table that will store your scouted data.</string>
+    <string name="download_toast">Downloading a file to store data. Do not click export until download is complete.</string>
+    <string name="making_table">Creating table</string>
+    <string name="export_toast">File exported to downloads/data.xls</string>
+    <string name="scout">Scout</string>
+    <string name="team_hint">Team Number</string>
+    <string name="start_game">Start Game</string>
+    <string name="hatch_mechanism">Hatch Grabber Mechanism</string>
+    <string name="cargo_mechanism">Cargo Grabber Mechanism</string>
+    <string name="lift_mechanism">Lift Mechanism</string>
+    <string name="drive">Drive</string>
+    <string name="hatch_pre_game">Hatch Pre-Game</string>
+    <string name="cargo_pre_game">Hatch Pre-Game</string>
+    <string name="hatch_in_game">Hatch in Game</string>
+    <string name="cargo_in_game">Hatch in Game</string>
+    <string name="export">Export</string>
+    <string name="share">Share</string>
+    <string name="clear">Clear View</string>
+    <string name="Erase">Erase file</string>
 </resources>
