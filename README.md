@@ -1,4 +1,4 @@
-#  ![](https://github.com/frc-emotion/Android-Scouter/blob/master/app/src/main/res/mipmap-mdpi/ic_launcher.png "Scouter") Deep Space Scouter
+#  ![](https://github.com/Sanjit1/DeepSpace/blob/master/app/src/main/res/mipmap-mdpi/ic_launcher.png "Scouter") Deep Space Scouter
 
 
 
