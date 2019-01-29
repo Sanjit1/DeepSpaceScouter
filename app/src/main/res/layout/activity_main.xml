@@ -35,4 +35,17 @@
         tools:layout_editor_absoluteX="157dp"
         tools:layout_editor_absoluteY="277dp" />
 
+    <Button
+        android:id="@+id/createYourOwn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#f4e133"
+        android:onClick="onClick"
+        android:text="DIY"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+
 </LinearLayout>

@@ -24,11 +24,40 @@
     <string name="lift_mechanism">Lift Mechanism</string>
     <string name="drive">Drive</string>
     <string name="hatch_pre_game">Hatch Pre-Game</string>
-    <string name="cargo_pre_game">Hatch Pre-Game</string>
+    <string name="cargo_pre_game">Cargo Pre-Game</string>
     <string name="hatch_in_game">Hatch in Game</string>
-    <string name="cargo_in_game">Hatch in Game</string>
+    <string name="cargo_in_game">Cargo in Game</string>
     <string name="export">Export</string>
-    <string name="share">Share</string>
-    <string name="clear">Clear View</string>
+    <string name="mail">Mail</string>
+    <string name="clear">Clear</string>
     <string name="Erase">Erase file</string>
+    <string name="gokul">Gokul</string>
+    <string name="title">Title</string>
+    <string name="gokul_mail">gokulswamilive@gmail.com</string>
+    <string name="message">Scout lead\'s email address</string>
+    <string name="ok">OK</string>
+    <string name="view">View</string>
+    <string name="notes">Notes</string>
+    <string name="no_notes">No notes</string>
+    <string name="scout_maker">Scout Activity Maker</string>
+    <string name="name_of_activity">Activity Name</string>
+    <string name="name_of_parameter">Parameter Name</string>
+    <string name="name_of_option">Option Name</string>
+    <string name="add">Add</string>
+    <string name="add_spinner">Add Value</string>
+    <string name="maxVal">Max Value</string>
+    <string name="minVal">Min Value</string>
+    <string name="config">Configurations</string>
+    <string name="no_config">No Configurations!</string>
+    <string name="finish">Finish</string>
+    <string name="load">Load</string>
+    <string-array name="parameter_type">
+        <item>Text</item>
+        <item>Spinner</item>
+        <item>Quantitative</item>
+    </string-array>
+    <string-array name="text_config">
+        <item>Text</item>
+        <item>Numeric</item>
+    </string-array>
 </resources>
