@@ -1,3 +1,5 @@
 # DeepSpace
 
-This is a repo for this years scouting app for Deep Space
+This is a repository for scouting this years game: Deep Space
+
+Have a blast!!
