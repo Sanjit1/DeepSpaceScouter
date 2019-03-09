@@ -31,9 +31,9 @@
     <string name="mail">Mail</string>
     <string name="clear">Clear</string>
     <string name="Erase">Erase file</string>
-    <string name="gokul">Gokul</string>
+    <string name="nobody">Nobody</string>
     <string name="title">Title</string>
-    <string name="gokul_mail">gokulswamilive@gmail.com</string>
+    <string name="nobody_mail">nobody@gmail.com</string>
     <string name="message">Scout lead\'s email address</string>
     <string name="ok">OK</string>
     <string name="view">View</string>

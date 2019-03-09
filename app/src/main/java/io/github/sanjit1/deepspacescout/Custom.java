@@ -115,9 +115,9 @@ public class Custom extends AppCompatActivity {
                 }
             });
 
-            alert.setNegativeButton(getString(R.string.gokul), new DialogInterface.OnClickListener() {
+            alert.setNegativeButton(getString(R.string.nobody), new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int whichButton) {
-                    scoutLead= getString(R.string.gokul_mail);
+                    scoutLead= getString(R.string.nobody_mail);
                     try{
                         FileWriter writer = new FileWriter(email);
                         writer.append(scoutLead);
